@@ -11,6 +11,8 @@ jobs:
   call-org:
     permissions:
       contents: read
+      actions: read
+      security-events: write
     uses: gperezusil/repo-template/.github/workflows/template-ci.yml@main
     with:
       image_name: devsecops-app
