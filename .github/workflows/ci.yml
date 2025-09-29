@@ -9,6 +9,8 @@ on:
 
 jobs:
   call-org:
+    permissions:
+      contents: read
     uses: gperezusil/repo-template/.github/workflows/template-ci.yml@main
     with:
       image_name: devsecops-app
